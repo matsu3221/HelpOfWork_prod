@@ -63,6 +63,7 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
     todoList = realm.objects(todo.self)
     
     print(now)
+    print(today)
     let yesterday = Date(timeIntervalSinceNow: -60 * 60 * 24)
 
     let result = todoList.filter( "addDay >=%@ AND addDay <= %@", yesterday,today)
@@ -166,7 +167,8 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
       if let textField = alertController.textFields?.first{
         let new_todo = todo()
         new_todo.title = textField.text!
-        new_todo.addDay = self.today
+        print(self.today)
+        new_todo.addDay = self.today + 60 * 60 * 9
         //ToDoの配列に入力値を挿入。先頭に挿入する
         self.todoList_table.append(new_todo)
         let realm = try! Realm()
@@ -232,10 +234,13 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
   //日付タップ時のイベント
   func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
     //取得するdateは1日前を指している
-    let oneDayAfter = date + 60 * 60 * 24
-    print(oneDayAfter)
+    let selectDate = date + 60 * 60 * 32 + 60 * 59
+    let oneDayAfter = date + 60 * 60 * 9
     print(date)
-    let result = todoList.filter( "addDay >=%@ AND addDay <= %@", date,oneDayAfter)
+    print(oneDayAfter)
+    print(selectDate)
+//    print(addDay)
+    let result = todoList.filter( "addDay >=%@ AND addDay <= %@", oneDayAfter,selectDate)
     //      self.todoList_table = Array(todoList)
     self.todoList_table = Array(result)
     print(todoList)
