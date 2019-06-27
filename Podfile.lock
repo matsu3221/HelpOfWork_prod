@@ -6,11 +6,13 @@ PODS:
   - Realm/Headers (3.16.0)
   - RealmSwift (3.16.0):
     - Realm (= 3.16.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
   - CalculateCalendarLogic
   - FSCalendar
   - RealmSwift
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - FSCalendar
     - Realm
     - RealmSwift
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   CalculateCalendarLogic: 27db31b8f27a42869ecf7ad0d43963a05af14193
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   Realm: 5ca1b8c472dfc532cd0ba0bfe2ce49f97130158f
   RealmSwift: 2ee401dbcc188706261921326146f5a539d4d4a7
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: f6a90521af91547379fe5b50c14014a2be1b13ce
+PODFILE CHECKSUM: cb79e83c0813bf5e2b7ec32a6a6c7df6eaf24520
 
 COCOAPODS: 1.5.3

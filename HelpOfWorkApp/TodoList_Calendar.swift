@@ -27,8 +27,15 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
   //tableViewの宣言
   @IBOutlet weak var todoLists: UITableView!
   
+//  //タップされたテーブルの行数を格納
+//  var indexRow:Int!
+//
   //今日日付を取得
   let today = Date()
+  
+  var today_last = Date()
+  
+  var today_first = Date()
   
   override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +69,19 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
       //todoを取得する
     todoList = realm.objects(todo.self)
     
-    print(now)
-    print(today)
+    formatter.dateFormat = "yyyy-MM-dd 23:59:59"
+    formatter.locale = Locale(identifier: "ja_JP")
+    today_last = formatter.date(from: now)! + 60 * 60 * 33 - 1
+    
+    formatter.dateFormat = "yyyy-MM-dd 00:00:00"
+    formatter.locale = Locale(identifier: "ja_JP")
+    today_first = formatter.date(from: now)! + 60 * 60 * 9 + 1
+    
+    print(today_last)
+    print(today_first)
     let yesterday = Date(timeIntervalSinceNow: -60 * 60 * 24)
 
-    let result = todoList.filter( "addDay >=%@ AND addDay <= %@", yesterday,today)
+    let result = todoList.filter( "addDay >=%@ AND addDay <= %@", today_first,today_last)
 //      self.todoList_table = Array(todoList)
       self.todoList_table = Array(result)
     
@@ -141,7 +156,7 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
     print(indexPath.row)
   
     cell.title.text = todoList_table[indexPath.row].title
-    cell.time.text = String(todoList_table[indexPath.row].time)
+//    cell.time.text = String(todoList_table[indexPath.row].time)
     switchView.tag = indexPath.row
     if(todoList_table[indexPath.row].done){
       switchView.isOn = true
@@ -168,7 +183,9 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
         let new_todo = todo()
         new_todo.title = textField.text!
         print(self.today)
-        new_todo.addDay = self.today + 60 * 60 * 9
+//        new_todo.addDay = self.today + 60 * 60 * 9
+        new_todo.addDay = self.today
+        print(new_todo.addDay)
         //ToDoの配列に入力値を挿入。先頭に挿入する
         self.todoList_table.append(new_todo)
         let realm = try! Realm()
@@ -234,7 +251,7 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
   //日付タップ時のイベント
   func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
     //取得するdateは1日前を指している
-    let selectDate = date + 60 * 60 * 32 + 60 * 59
+    let selectDate = date + 60 * 60 * 33 - 1
     let oneDayAfter = date + 60 * 60 * 9
     print(date)
     print(oneDayAfter)
@@ -247,6 +264,35 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
     print(todoList_table)
     todoLists.reloadData()
   }
+ 
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // セルの選択を解除
+    todoLists.deselectRow(at: indexPath, animated: true)
+    print(indexPath.row)
+//    self.indexRow = indexPath.row
+    self.performSegue(withIdentifier: "toTodoDetail", sender: indexPath.row)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    var todoDetail:ToDoDetailViewController! = nil
+//    var todoDetail:ToDoDetailViewController!
+    let selectRow:Int = sender as! Int
+    print("indexRow = \(sender as! Int)")
+    if(segue.identifier == "toTodoDetail"){
+//      if let todoDetail = segue.destination as? ToDoDetailViewController{
+        let todoDetail = (segue.destination as? ToDoDetailViewController)
+      todoDetail?.todoTitle = todoList_table[selectRow].title
+      todoDetail?.done = todoList_table[selectRow].done
+      todoDetail?.addDay = todoList_table[selectRow].addDay as! Date
+      todoDetail?.todoList_table = todoList_table
+      todoDetail?.time = todoList_table[selectRow].time
+      todoDetail?.indexRow = selectRow
+//      }
+    }
+  }
   
 }

@@ -20,6 +20,7 @@
 		2CFA989922AFDBE90016F90B /* TodoList_Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989822AFDBE90016F90B /* TodoList_Calendar.swift */; };
 		2CFA989B22AFDCA70016F90B /* todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989A22AFDCA70016F90B /* todo.swift */; };
 		2CFA989D22B3CC1C0016F90B /* todoListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */; };
+		2CFA989F22BF8FD10016F90B /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */; };
 		DD2358DC25061571058EBD30 /* Pods_HelpOfWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B6D230122E146FCA87D1D /* Pods_HelpOfWorkApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		2CFA989822AFDBE90016F90B /* TodoList_Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList_Calendar.swift; sourceTree = "<group>"; };
 		2CFA989A22AFDCA70016F90B /* todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo.swift; sourceTree = "<group>"; };
 		2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListsCell.swift; sourceTree = "<group>"; };
+		2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailViewController.swift; sourceTree = "<group>"; };
 		734070A80F289D6CCCD389A3 /* Pods-HelpOfWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpOfWorkApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpOfWorkApp/Pods-HelpOfWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A54B6D230122E146FCA87D1D /* Pods_HelpOfWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpOfWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				2CFA989822AFDBE90016F90B /* TodoList_Calendar.swift */,
 				2CFA989A22AFDCA70016F90B /* todo.swift */,
 				2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */,
+				2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */,
 			);
 			path = HelpOfWorkApp;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -203,6 +207,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -240,6 +245,7 @@
 			files = (
 				2CFA989B22AFDCA70016F90B /* todo.swift in Sources */,
 				2C8D65F222A167D3009E1805 /* TodoListViewController.swift in Sources */,
+				2CFA989F22BF8FD10016F90B /* ToDoDetailViewController.swift in Sources */,
 				2C8D65EE22A15117009E1805 /* TodoList.swift in Sources */,
 				2CFA989D22B3CC1C0016F90B /* todoListsCell.swift in Sources */,
 				2CD98D992277DB90008639C8 /* ViewController.swift in Sources */,
@@ -402,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-yu0i0so0n.HelpOfWorkApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-yu0i0so0n.HelpOfWorkApp-prod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -423,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-yu0i0so0n.HelpOfWorkApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-yu0i0so0n.HelpOfWorkApp-prod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
