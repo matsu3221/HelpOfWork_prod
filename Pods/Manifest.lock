@@ -1,34 +1,42 @@
 PODS:
-  - CalculateCalendarLogic (0.2.5)
+  - CalculateCalendarLogic (0.3.0)
+  - CircleMenu (4.1.0)
   - FSCalendar (2.8.0)
-  - Realm (3.16.0):
-    - Realm/Headers (= 3.16.0)
-  - Realm/Headers (3.16.0)
-  - RealmSwift (3.16.0):
-    - Realm (= 3.16.0)
-  - TextFieldEffects (1.5.1)
+  - Realm (3.16.2):
+    - Realm/Headers (= 3.16.2)
+  - Realm/Headers (3.16.2)
+  - RealmSwift (3.16.2):
+    - Realm (= 3.16.2)
+  - TextFieldEffects (1.6.0)
+  - TransitionButton (0.5.2)
 
 DEPENDENCIES:
   - CalculateCalendarLogic
+  - CircleMenu
   - FSCalendar
   - RealmSwift
   - TextFieldEffects
+  - TransitionButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CalculateCalendarLogic
+    - CircleMenu
     - FSCalendar
     - Realm
     - RealmSwift
     - TextFieldEffects
+    - TransitionButton
 
 SPEC CHECKSUMS:
-  CalculateCalendarLogic: 27db31b8f27a42869ecf7ad0d43963a05af14193
+  CalculateCalendarLogic: cd5b2c706a8628bb924c5ee9d05c4f61bdbaf390
+  CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
-  Realm: 5ca1b8c472dfc532cd0ba0bfe2ce49f97130158f
-  RealmSwift: 2ee401dbcc188706261921326146f5a539d4d4a7
-  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
+  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
 
-PODFILE CHECKSUM: cb79e83c0813bf5e2b7ec32a6a6c7df6eaf24520
+PODFILE CHECKSUM: 8da8df693f1a04eb4de53cf28eae6acccd299c3e
 
 COCOAPODS: 1.5.3

@@ -85,8 +85,9 @@ class ToDoDetailViewController: UIViewController,UITextFieldDelegate {
       todoList_table[indexRow!].setValue(timeTextField.text, forKeyPath: "time")
       todoList_table[indexRow!].setValue(doneSwitch.isOn, forKeyPath: "done")
     }
-    
-    self.performSegue(withIdentifier: "toToDoList", sender: nil)
+    self.navigationController?.popViewController(animated: true)
+
+//    self.performSegue(withIdentifier: "toToDoList", sender: nil)
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

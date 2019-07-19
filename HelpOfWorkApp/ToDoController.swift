@@ -34,6 +34,7 @@ class ToDoController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     todoLists = realm.objects(TodoList.self)
     // Do any additional setup after loading the view.
+      self.navigationController?.setNavigationBarHidden(false, animated: false)
   }
   
   override func awakeFromNib() {
