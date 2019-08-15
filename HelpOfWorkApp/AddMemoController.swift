@@ -106,6 +106,8 @@ class AddMemoController: UIViewController,UITextFieldDelegate,UITextViewDelegate
     userDefaults.set(self.memoTextList, forKey: "text")
     //UserDefaultsへの値の保存を明示的に行う
     userDefaults.synchronize()
+    
+    self.navigationController?.popViewController(animated: true)
   }
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {

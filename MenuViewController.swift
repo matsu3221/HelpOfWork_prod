@@ -24,7 +24,7 @@ class MenuViewController: UIViewController,CircleMenuDelegate {
     normalIcon:"Menu-1",
     selectedIcon:"Menu-1",
     buttonsCount: 4,
-    duration: 2,
+    duration: 1.5,
     distance: 120)
   
   func circleMenu(_: CircleMenu, willDisplay button: UIButton, atIndex: Int) {
@@ -45,8 +45,9 @@ class MenuViewController: UIViewController,CircleMenuDelegate {
       performSegue(withIdentifier: "goToDo", sender: nil)
     }else if(menuButtons[atIndex].icon=="Note"){
       performSegue(withIdentifier: "goNote", sender: nil)
+    }else if(menuButtons[atIndex].icon == "WeatherCheck"){
+      performSegue(withIdentifier: "goWeatherCheck", sender: nil)
     }
-    
   }
   
     override func viewDidLoad() {

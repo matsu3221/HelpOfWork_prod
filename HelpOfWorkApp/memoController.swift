@@ -50,6 +50,7 @@ class memoController: UIViewController,UITableViewDataSource,UITableViewDelegate
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    print(indexPath)
     //Storyboardで指定したmemoListCell識別子を利用して再利用可能なセルを取得する
     let cell = memoTableView.dequeueReusableCell(withIdentifier: "memoList", for: indexPath)
     

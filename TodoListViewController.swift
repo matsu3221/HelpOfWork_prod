@@ -41,15 +41,8 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
     todoLists = realm.objects(TodoList.self)
     privateToken = todoLists.observe{
       [weak self] _ in
-//      self?.reload()
     }
   }
-
-//  func reload(){
-//    if(todoList == nil){
-//      todoList.reloadData()
-//    }
-//  }
 
   func addTodoItem(todo: TodoList){
     let config = Realm.Configuration(schemaVersion: 1)
@@ -81,6 +74,7 @@ class TodoListViewController: UIViewController,UITableViewDataSource,UITableView
         //登録日の日付を取得
         let now = Date()
         self.formatter.dateFormat = "yyyy/mm/dd"
+        self.formatter.locale = Locale(identifier: "ja_JP")
         myTodo.addDay = self.formatter.string(from: now)
 //        self.list.insert(myTodo, at: 0)
         self.addTodoItem(todo: myTodo)

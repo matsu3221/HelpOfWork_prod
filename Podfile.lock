@@ -2,6 +2,8 @@ PODS:
   - CalculateCalendarLogic (0.3.0)
   - CircleMenu (4.1.0)
   - FSCalendar (2.8.0)
+  - IBAnimatable (6.0.0)
+  - PMSuperButton (3.0.1)
   - Realm (3.16.2):
     - Realm/Headers (= 3.16.2)
   - Realm/Headers (3.16.2)
@@ -14,6 +16,8 @@ DEPENDENCIES:
   - CalculateCalendarLogic
   - CircleMenu
   - FSCalendar
+  - IBAnimatable
+  - PMSuperButton
   - RealmSwift
   - TextFieldEffects
   - TransitionButton
@@ -23,6 +27,8 @@ SPEC REPOS:
     - CalculateCalendarLogic
     - CircleMenu
     - FSCalendar
+    - IBAnimatable
+    - PMSuperButton
     - Realm
     - RealmSwift
     - TextFieldEffects
@@ -32,11 +38,13 @@ SPEC CHECKSUMS:
   CalculateCalendarLogic: cd5b2c706a8628bb924c5ee9d05c4f61bdbaf390
   CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  PMSuperButton: 2bef6f8659a5df969a69887f496ef309480c65eb
   Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
   RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
 
-PODFILE CHECKSUM: 8da8df693f1a04eb4de53cf28eae6acccd299c3e
+PODFILE CHECKSUM: da053ce165c7e905a177879c311282e14e5df79b
 
 COCOAPODS: 1.5.3

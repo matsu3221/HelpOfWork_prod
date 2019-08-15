@@ -295,4 +295,9 @@ class TodoList_Calendar: UIViewController,FSCalendarDelegate,FSCalendarDataSourc
     }
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+      self.todoLists.reloadData()
+  }
+
+  
 }

@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1B4AC022EC82D2000F95E0 /* memoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B4ABF22EC82D2000F95E0 /* memoViewController.swift */; };
+		2C1B4AC222EC8DDB000F95E0 /* memoTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B4AC122EC8DDB000F95E0 /* memoTableViewCell2.swift */; };
+		2C1B4AC422EDD8B9000F95E0 /* memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B4AC322EDD8B9000F95E0 /* memo.swift */; };
+		2C1B4AC622EF1C34000F95E0 /* memoCreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B4AC522EF1C34000F95E0 /* memoCreateController.swift */; };
+		2C532FAB22E47868004B280B /* sampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C532FAA22E47868004B280B /* sampleView.swift */; };
+		2C532FAD22E4812C004B280B /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C532FAC22E4812C004B280B /* PMSuperButton.swift */; };
+		2C532FAF22E49384004B280B /* WeatherCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C532FAE22E49384004B280B /* WeatherCheckTableViewCell.swift */; };
+		2C532FB122E4980C004B280B /* WeatherCheckControllerVIewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C532FB022E4980C004B280B /* WeatherCheckControllerVIewViewController.swift */; };
+		2C818D3622FE709F003CEC36 /* image_Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C818D3522FE709F003CEC36 /* image_Weather.swift */; };
 		2C83C01022DDFAE10069C600 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C83C00F22DDFAE10069C600 /* MenuViewController.swift */; };
 		2C8D65E822A0068C009E1805 /* ToDoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D65E722A0068C009E1805 /* ToDoController.swift */; };
 		2C8D65EE22A15117009E1805 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D65ED22A15117009E1805 /* TodoList.swift */; };
 		2C8D65F222A167D3009E1805 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D65F122A167D3009E1805 /* TodoListViewController.swift */; };
 		2CD98D972277DB90008639C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD98D962277DB90008639C8 /* AppDelegate.swift */; };
-		2CD98D992277DB90008639C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD98D982277DB90008639C8 /* ViewController.swift */; };
 		2CD98D9C2277DB90008639C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD98D9A2277DB90008639C8 /* Main.storyboard */; };
 		2CD98D9E2277DB94008639C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD98D9D2277DB94008639C8 /* Assets.xcassets */; };
 		2CD98DA12277DB94008639C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD98D9F2277DB94008639C8 /* LaunchScreen.storyboard */; };
@@ -22,19 +30,26 @@
 		2CFA989B22AFDCA70016F90B /* todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989A22AFDCA70016F90B /* todo.swift */; };
 		2CFA989D22B3CC1C0016F90B /* todoListsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */; };
 		2CFA989F22BF8FD10016F90B /* ToDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */; };
-		2CFA98A122C4E5200016F90B /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA98A022C4E5200016F90B /* menuViewController.swift */; };
 		DD2358DC25061571058EBD30 /* Pods_HelpOfWorkApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B6D230122E146FCA87D1D /* Pods_HelpOfWorkApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02B60CFBE6FE698223D3811E /* Pods-HelpOfWorkApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpOfWorkApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelpOfWorkApp/Pods-HelpOfWorkApp.release.xcconfig"; sourceTree = "<group>"; };
+		2C1B4ABF22EC82D2000F95E0 /* memoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoViewController.swift; sourceTree = "<group>"; };
+		2C1B4AC122EC8DDB000F95E0 /* memoTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoTableViewCell2.swift; sourceTree = "<group>"; };
+		2C1B4AC322EDD8B9000F95E0 /* memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memo.swift; sourceTree = "<group>"; };
+		2C1B4AC522EF1C34000F95E0 /* memoCreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoCreateController.swift; sourceTree = "<group>"; };
+		2C532FAA22E47868004B280B /* sampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleView.swift; sourceTree = "<group>"; };
+		2C532FAC22E4812C004B280B /* PMSuperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSuperButton.swift; sourceTree = "<group>"; };
+		2C532FAE22E49384004B280B /* WeatherCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCheckTableViewCell.swift; sourceTree = "<group>"; };
+		2C532FB022E4980C004B280B /* WeatherCheckControllerVIewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCheckControllerVIewViewController.swift; sourceTree = "<group>"; };
+		2C818D3522FE709F003CEC36 /* image_Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_Weather.swift; sourceTree = "<group>"; };
 		2C83C00F22DDFAE10069C600 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 		2C8D65E722A0068C009E1805 /* ToDoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoController.swift; sourceTree = "<group>"; };
 		2C8D65ED22A15117009E1805 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoList.swift; path = ../TodoList.swift; sourceTree = "<group>"; };
 		2C8D65F122A167D3009E1805 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
 		2CD98D932277DB90008639C8 /* HelpOfWorkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpOfWorkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD98D962277DB90008639C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CD98D982277DB90008639C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CD98D9B2277DB90008639C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CD98D9D2277DB94008639C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CD98DA02277DB94008639C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,7 +60,6 @@
 		2CFA989A22AFDCA70016F90B /* todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo.swift; sourceTree = "<group>"; };
 		2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListsCell.swift; sourceTree = "<group>"; };
 		2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailViewController.swift; sourceTree = "<group>"; };
-		2CFA98A022C4E5200016F90B /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		734070A80F289D6CCCD389A3 /* Pods-HelpOfWorkApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelpOfWorkApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelpOfWorkApp/Pods-HelpOfWorkApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A54B6D230122E146FCA87D1D /* Pods_HelpOfWorkApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelpOfWorkApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,22 +107,29 @@
 			isa = PBXGroup;
 			children = (
 				2CD98D9A2277DB90008639C8 /* Main.storyboard */,
+				2CD98D9F2277DB94008639C8 /* LaunchScreen.storyboard */,
 				2CD98D9D2277DB94008639C8 /* Assets.xcassets */,
+				2CD98D962277DB90008639C8 /* AppDelegate.swift */,
 				2C83C00F22DDFAE10069C600 /* MenuViewController.swift */,
 				2C8D65F122A167D3009E1805 /* TodoListViewController.swift */,
+				2CFA989822AFDBE90016F90B /* TodoList_Calendar.swift */,
 				2C8D65ED22A15117009E1805 /* TodoList.swift */,
-				2CD98D962277DB90008639C8 /* AppDelegate.swift */,
-				2CD98D982277DB90008639C8 /* ViewController.swift */,
-				2CD98D9F2277DB94008639C8 /* LaunchScreen.storyboard */,
-				2CD98DA22277DB94008639C8 /* Info.plist */,
+				2CFA989A22AFDCA70016F90B /* todo.swift */,
 				2CD98DA8228301C4008639C8 /* memoController.swift */,
 				2CD98DAA22830632008639C8 /* AddMemoController.swift */,
 				2C8D65E722A0068C009E1805 /* ToDoController.swift */,
-				2CFA989822AFDBE90016F90B /* TodoList_Calendar.swift */,
-				2CFA989A22AFDCA70016F90B /* todo.swift */,
 				2CFA989C22B3CC1C0016F90B /* todoListsCell.swift */,
 				2CFA989E22BF8FD10016F90B /* ToDoDetailViewController.swift */,
-				2CFA98A022C4E5200016F90B /* menuViewController.swift */,
+				2CD98DA22277DB94008639C8 /* Info.plist */,
+				2C532FAA22E47868004B280B /* sampleView.swift */,
+				2C532FAC22E4812C004B280B /* PMSuperButton.swift */,
+				2C532FAE22E49384004B280B /* WeatherCheckTableViewCell.swift */,
+				2C532FB022E4980C004B280B /* WeatherCheckControllerVIewViewController.swift */,
+				2C818D3522FE709F003CEC36 /* image_Weather.swift */,
+				2C1B4ABF22EC82D2000F95E0 /* memoViewController.swift */,
+				2C1B4AC122EC8DDB000F95E0 /* memoTableViewCell2.swift */,
+				2C1B4AC322EDD8B9000F95E0 /* memo.swift */,
+				2C1B4AC522EF1C34000F95E0 /* memoCreateController.swift */,
 			);
 			path = HelpOfWorkApp;
 			sourceTree = "<group>";
@@ -202,6 +223,8 @@
 				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
 				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -214,6 +237,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -253,19 +278,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1B4AC022EC82D2000F95E0 /* memoViewController.swift in Sources */,
+				2C532FAB22E47868004B280B /* sampleView.swift in Sources */,
+				2C532FAF22E49384004B280B /* WeatherCheckTableViewCell.swift in Sources */,
+				2C532FAD22E4812C004B280B /* PMSuperButton.swift in Sources */,
+				2C1B4AC622EF1C34000F95E0 /* memoCreateController.swift in Sources */,
 				2CFA989B22AFDCA70016F90B /* todo.swift in Sources */,
+				2C1B4AC222EC8DDB000F95E0 /* memoTableViewCell2.swift in Sources */,
 				2C8D65F222A167D3009E1805 /* TodoListViewController.swift in Sources */,
 				2CFA989F22BF8FD10016F90B /* ToDoDetailViewController.swift in Sources */,
-				2CFA98A122C4E5200016F90B /* menuViewController.swift in Sources */,
 				2C8D65EE22A15117009E1805 /* TodoList.swift in Sources */,
 				2CFA989D22B3CC1C0016F90B /* todoListsCell.swift in Sources */,
-				2CD98D992277DB90008639C8 /* ViewController.swift in Sources */,
 				2C83C01022DDFAE10069C600 /* MenuViewController.swift in Sources */,
 				2CD98DAB22830632008639C8 /* AddMemoController.swift in Sources */,
+				2C532FB122E4980C004B280B /* WeatherCheckControllerVIewViewController.swift in Sources */,
 				2CD98D972277DB90008639C8 /* AppDelegate.swift in Sources */,
 				2CFA989922AFDBE90016F90B /* TodoList_Calendar.swift in Sources */,
+				2C818D3622FE709F003CEC36 /* image_Weather.swift in Sources */,
 				2C8D65E822A0068C009E1805 /* ToDoController.swift in Sources */,
 				2CD98DA9228301C4008639C8 /* memoController.swift in Sources */,
+				2C1B4AC422EDD8B9000F95E0 /* memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
